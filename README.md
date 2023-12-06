@@ -38,8 +38,15 @@ Use the "Load Storyboard" button to load an existing .sty file and start editing
 - Load custom map images for a personalized gaming environment.
 - Export script and custom files for use in the game.
 
+- **Restore:**
+- Restore any modified files back to default Urban Chaos files using the "Restore" button.
+
 ## Screenshots
 ![Logo](Screenshot.PNG)
+
+![Logo](Screenshot2.PNG)
+
+![Logo](Screenshot3.PNG)
 
 ## Acknowledgments
 
