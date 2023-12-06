@@ -1,0 +1,41 @@
+﻿<Window x:Class="UC_Storyboard.MVVM.View.DistrictEditDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit District" Height="200" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label Content="District ID:" VerticalAlignment="Center"/>
+            <Label Content="{Binding DistrictID}" VerticalAlignment="Center" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Label Content="District Name:" VerticalAlignment="Center"/>
+            <TextBox Text="{Binding DistrictName, Mode=TwoWay}" VerticalAlignment="Center" IsReadOnly="False"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Label Content="X-Position:" VerticalAlignment="Center"/>
+            <TextBox Text="{Binding XPos, Mode=TwoWay}" VerticalAlignment="Center" IsReadOnly="False"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <Label Content="Y-Position:" VerticalAlignment="Center"/>
+            <TextBox Text="{Binding YPos, Mode=TwoWay}" VerticalAlignment="Center" IsReadOnly="False"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal">
+            
+        </StackPanel>
+
+
+    </Grid>
+</Window>

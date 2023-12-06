@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="UC_Storyboard.MVVM.View.DistrictView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="500">
+    <Grid>
+        <Label Foreground="white" Content="Districts:" />
+        <StackPanel>
+            <Button VerticalAlignment="Top" HorizontalAlignment="Right" Content="Select Position on Map" Click="SelectOnMapButton_Click"/>
+            <Button Content="Delete District" Click="DeleteDistrictButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+            <Button Content="Add District" Click="AddDistrictButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        </StackPanel>
+        <DataGrid x:Name="districtDataGrid" AutoGenerateColumns="False" ItemsSource="{Binding DistrictCollection}" Margin="0,67,0,29" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="District ID" Binding="{Binding DistrictID}" />
+                <DataGridTextColumn Header="District Name" Binding="{Binding DistrictName}" />
+                <DataGridTextColumn Header="X-Pos" Binding="{Binding XPos}" />
+                <DataGridTextColumn Header="Y-Pos" Binding="{Binding YPos}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

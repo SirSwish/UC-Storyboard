@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>UC_Storyboard</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Impacted2.0.ttf" />
+    <None Remove="Images\canvas.png" />
+    <None Remove="Images\darci.jpg" />
+    <None Remove="Images\darci2.jpg" />
+    <None Remove="Images\default_map.png" />
+    <None Remove="Images\Icon.png" />
+    <None Remove="Images\roper.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Fonts\Impacted2.0.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\canvas.png" />
+    <Resource Include="Images\darci.jpg" />
+    <Resource Include="Images\darci2.jpg" />
+    <Resource Include="Images\default_map.png" />
+    <Resource Include="Images\Icon.png" />
+    <Resource Include="Images\roper.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MVVM\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

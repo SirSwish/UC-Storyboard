@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="UC_Storyboard.MVVM.View.AboutView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UC_Storyboard.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="500">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Border Width="100" Height="100" BorderBrush="White" BorderThickness="4">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                           RadiusY="10"
+                                           Rect="0,0,100,100"/>
+                    </Border.Clip>
+                    <Image Source="/Images/darci.jpg" Width="100" Height="100"/>
+                </Border>
+                <TextBlock FontSize="14" Width="250" TextWrapping="WrapWithOverflow" Text="Load and view a Storyboard (.sty) file by selecting Load File button. View and edit
+                           mission information, district information and positions by selecting 'Districts' and 'Missions' tabs. Double click an entry to edit" Margin="60,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Center" Style="{StaticResource CustomFont}" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Margin="0,40,0,0" Orientation="Horizontal">
+                <TextBlock FontSize="14" Width="250" TextWrapping="WrapWithOverflow" Text="Alternatively, create your own Storyboard file by adding to the Districts or Missions tab. You can also specify custom briefing audio to play when the mission loads in game. You can use a custom overworld map by pressing the 'Select Map Image' button. Files must be BMP and 640x480 pixels." VerticalAlignment="Center" Style="{StaticResource CustomFont}" HorizontalAlignment="Right" Foreground="White"/>
+                <Border Margin="60,0,0,0" Width="100" Height="100" BorderBrush="White" BorderThickness="4">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                           RadiusY="10"
+                           Rect="0,0,100,100"/>
+                    </Border.Clip>
+                    <Image Source="/Images/roper.jpg" Width="100" Height="100"/>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Margin="0,40,0,0" Orientation="Horizontal">
+                <Border Width="100" Height="100" BorderBrush="White" BorderThickness="4">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                           RadiusY="10"
+                           Rect="0,0,100,100"/>
+                    </Border.Clip>
+                    <Image Source="/Images/darci2.jpg" Width="100" Height="100"/>
+                </Border>
+                <TextBlock Margin="60,0,0,0" FontSize="14" Width="250" TextWrapping="WrapWithOverflow" Text="Save your storyboard by selecting an Urban Chaos installation directory, then selecting the 'Save Storyboard' button. If you have selected Custom Briefing Audio or a custom overworld map, these will be automatically saved. Select the 'Restore' button to return to default game settings" VerticalAlignment="Center" Style="{StaticResource CustomFont}" Foreground="White"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
